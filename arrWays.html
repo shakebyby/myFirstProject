@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<script>
+    let arrWays={
+        add(arr,target){
+            arr.push(target);
+            return arr;
+        },
+        remove(arr,index){
+            arr.splice(index,1);
+            return arr;
+        },
+        edit(arr,index,target){
+            arr.splice(index,1,target);
+            return arr;
+        },
+        get(arr,index){
+            return arr[index];
+        }
+    };
+    let arr=['a','b','c'];
+    console.log(arr);
+    console.log(arrWays.add(arr,'d'));
+    console.log(arrWays.remove(arr,1));
+    console.log(arrWays.edit(arr,0,'sf'));
+    console.log(arrWays.get(arr,0));
+</script>
+</body>
+</html>
